@@ -1,52 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Product Landing Page</title>
   </head>
-
   <body>
-    <h1 style="display:none">Hello World, we are software developers!</h1>
     <header id="header">
-      <nav id="nav-bar" style="position: fixed;top: 0;">
-        <a class="nav-link" href="#header">Link 1</a>
-        <a class="nav-link" href="#video1">Link 2</a>
-        <a class="nav-link" href="#form">Link 2</a>
+      <nav id="nav-bar">
+        <img
+          id="header-img"
+          src="https://www.damos.co/fotossecciones/slide_damossoluciones_1593978379.jpg"
+          max-height="50px"
+        />
+        <a href="#Section1" class="nav-link">Section1</a> |
+        <a href="#Video" class="nav-link">Video</a> |
+        <a href="#Section3" class="nav-link">Section3</a>
+        <hr />
       </nav>
-      <img id="header-img" src="https://www.damos.co/fotossecciones/slide_damossoluciones_1593978379.jpg" alt="">
-      
     </header>
-    <main id="main">
-      <section id="video1">
-        <iframe width="420" height="315" id="video"
-  src="https://www.youtube.com/embed/tgbNymZ7vqY">
-  </iframe>
+    <main>
+      <h1>
+        Title Main
+      </h1>
+      <section id="Section1">
+        <h2>Title Section</h2>
+        <div class="flex-here">
+          <div class="flex-left">
+            <img
+              id="bullet"
+              src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-cool-emoji-vector-icon-png-image_3719381.jpg"
+              max-height="25px"
+            />
+          </div>
+          <div class="flex-right">Text</div>
+        </div>
+        <div class="flex-here">
+          <div class="flex-left">
+            <img
+              id="bullet"
+              src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-cool-emoji-vector-icon-png-image_3719381.jpg"
+              max-height="25px"
+            />
+          </div>
+          <div class="flex-right">
+            Text
+          </div>
+        </div>
+        <div class="flex-here">
+          <div class="flex-left">
+            <img
+              id="bullet"
+              src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-cool-emoji-vector-icon-png-image_3719381.jpg"
+              max-height="25px"
+            />
+          </div>
+          <div class="flex-right">
+            Texto
+          </div>
+        </div>
       </section>
-      <section id="link2">
-        <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
-          <input type="email" id="email" name="email" placeholder="Enter your email..">
-          <input type="submit" id="submit">
-  
-        </form>
+      <section id="Video">
+        <h2>Title video</h2>
+        <br />
+        <iframe
+          id="video"
+          width="520"
+          height="347"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY"
+          frameborder="0"
+          allowfullscreen
+          alt="video"
+        >
+        </iframe>
       </section>
+      <section id="Section3">
+        <h2>Title Section</h2>
+        <div class="flex-mem">
+          <div class="flex-mem-box">
+            <font size="+2">Text 1</font><br />
+            <ul>
+              <li>Option1</li>
+              <li>option2</li>
+            </ul>
+          </div>
+          <div class="flex-mem-box">
+            <font size="+2">Text 2</font><br />
+            <ul>
+              <li>Option1</li>
+              <li>Option2</li>
+            </ul>
+          </div>
+          <div class="flex-mem-box">
+            <font size="+2">Text 3</font><br />
+            <ul>
+              <li>Option1</li>
+              <li>Option2</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <label for="email"><p>Email:</p><input name="email" id="email" type="email" placeholder="johnsmith@email.com" required></label>
+        <input type="submit" id="submit">
+      </form>
+      <footer>
+        <a href="../">Top page</a> |
+      </footer>
     </main>
-    
-    
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
-    <script  src="js/index.js"></script>
   </body>
 </html>
